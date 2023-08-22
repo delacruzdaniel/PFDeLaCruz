@@ -146,6 +146,12 @@ main a:hover{
 .patologias-home{
     margin-top: 150px;
 }
+
+.patologias-home h2{
+    text-decoration: underline;
+    margin: 30px;
+}
+
 .imagen-redonda {
     border-radius: 50%;
     max-width: 50%;
@@ -170,5 +176,7 @@ main a:hover{
     font-family: 'Lato', sans-serif
 }
 
-/* cambiar el boton de color y seguir con las certificaciones y el footer */
+.certificaciones-home{
+    margin-top: 50px;
+}
 /* Fin de patologias home*/
