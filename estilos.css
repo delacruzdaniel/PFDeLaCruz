@@ -1,0 +1,87 @@
+body{
+    background-image: url(Imagenes/background\ image.jpg);
+    background-size:auto
+    
+}
+
+.navbar{
+    height: 120px;
+    background-color:#44c59a;
+}
+
+.img-navbar{
+    height: 80px;
+}
+
+.titulo-head{
+    color: black;
+    font-size: x-large;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-link{
+    color: black !important;
+    transition: color 0.3s ease !important;
+}
+
+.nav-link:hover{
+    color: bisque !important;
+}
+
+@media only screen and (min-width: 0) and (max-width: 532px){
+    .navbar-collapse{
+        background-color: #44c59a;
+        display: flex;
+        justify-content: center !important;
+    }
+    
+    }
+
+main {
+    background-image: url(Imagenes/portada.jpg);
+    height: 600px;
+    width: 100%;
+    background-size:cover;
+    background-position:center;
+    
+}
+main p{
+    color: black;
+    display: flex;
+    margin-top: 400px !important;
+    margin-left: auto;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 2px;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+main a{
+    text-decoration: none;
+    color: black;
+    background-color: #44c59a;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-left: 200px;
+}
+
+@media only screen and (min-width:0) and (max-width:532px ){
+    main a{
+        text-decoration: none;
+        color: black;
+        background-color: #44c59a;
+        padding: 10px 10px;
+        border: 2px solid black;
+        border-radius: 15px;
+        margin-left: 100px;
+    }
+}
+
+
+
+
+/*     seguimos intentando acomodar el boton de programar una consulta */
