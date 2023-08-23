@@ -339,3 +339,32 @@ text-transform: uppercase;
 }
 
   /* contacto fin */
+
+  .preguntas-frecuentes-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .accordion-button {
+    background-color: #44c59a; 
+    font-weight: bold
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #44c59a; 
+    color: antiquewhite;
+  }
+
+  .preguntas-frecuentes-container p{
+    background-color: antiquewhite;
+  }
+
+  .accordion-body {
+    background-color:antiquewhite;
+    color:black; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
