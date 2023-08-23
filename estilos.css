@@ -212,3 +212,47 @@ footer p{
 }
 
 /* Fin footer */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    }
+
+.whatsapp-button i {
+    width: 24px;
+    height: 24px;
+    }
+    
+    .whatsapp-button a {
+    color: white;
+    text-decoration: none;
+    }
+
+.container {
+        padding: 20px;
+    }
+    
+    .content {
+        margin: 20px 0;
+    }
+.info-servicios h2{
+    background-color: #44c59a;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+.info-servicios p{
+    font-size: large;
+    background-color: antiquewhite;
+    text-align: justify;
+}
