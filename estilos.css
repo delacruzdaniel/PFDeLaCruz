@@ -32,8 +32,10 @@ body{
     color: black;
     font-size: x-large;
     cursor: pointer;
-    font-family: 'Lato', sans-serif
+    font-family: 'Roboto', sans-serif;
 }
+
+
 
 .nav-link{
     color: black !important;
@@ -339,7 +341,7 @@ text-transform: uppercase;
 }
 
   /* contacto fin */
-
+/* Comienzo del FAQ */
   .preguntas-frecuentes-container {
     max-width: 800px;
     margin: 0 auto;
@@ -367,4 +369,44 @@ text-transform: uppercase;
     border-radius: 5px; 
     padding: 10px;
     font-family: 'Roboto', sans-serif;
+  }
+/* fin del FAQ */
+  /* commienzo del sobre mi */
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .custom-number {
+    margin-top: 50px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #44c59a; /* Cambiar el color del número aquí */
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .sobre-mi h1{
+    color: black;
+    font-family: 'Lato', sans-serif;
+
+  }
+
+  .sobre-mi li{
+    font-size: large;
+    font-family: 'Lato', sans-serif;
+    text-decoration: solid;
+    text-transform:capitalize;
   }
