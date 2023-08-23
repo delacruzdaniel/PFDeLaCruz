@@ -177,7 +177,7 @@ main a:hover{
     padding: 10px 10px;
     border: 2px solid black;
     border-radius: 15px;
-    font-family: 'Lato', sans-serif
+    font-family: 'Lato', sans-serif;
 }
 
 .boton-patologias a:hover{
@@ -212,7 +212,7 @@ footer p{
 }
 
 /* Fin footer */
-
+/* Inicio boton de whatsapp */
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
@@ -238,7 +238,8 @@ footer p{
     color: white;
     text-decoration: none;
     }
-
+/* Fin boton de whatsapp */
+/* Inicio de servicios (pagina de servicios) */
 .container {
         padding: 20px;
     }
@@ -255,4 +256,30 @@ footer p{
     font-size: large;
     background-color: antiquewhite;
     text-align: justify;
+    
 }
+/* Fin de servicios (pagina de servicios) */
+/* Inicio Patologias (pagina servicios)*/
+.patologias{
+    height: auto;
+}
+
+.patologias h2{
+    background-color: #44c59a;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif !important;
+}
+
+.patologias p{
+    font-size: large;
+    background-color: antiquewhite;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.patologias img{
+    max-width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* Fin de patologias(pagina de servicios) */
