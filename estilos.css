@@ -283,3 +283,12 @@ footer p{
     overflow: hidden;
 }
 /* Fin de patologias(pagina de servicios) */
+
+.carousel{
+    width: 40%;
+    margin-top: 100px;
+}
+
+.carousel img{
+    width: auto;
+}
