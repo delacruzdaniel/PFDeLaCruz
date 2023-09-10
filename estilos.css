@@ -87,39 +87,65 @@ body{
 }
 /* Fin del navbar */
 
-/* Comienzo del main inicio */
+/* Inicio del main */
 main {
     background-image: url(Imagenes/portada.jpg);
-    height: 600px;
-    width: 100%;
-    background-size:cover;
-    background-position:center;
-    
+    background-size: cover;
+    background-position: center;
+    padding: 0; 
 }
-main p{
+
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+
+main .col-lg-6 {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-consulta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #44c59a;
+    color: black; 
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px; 
+}
+
+.btn-consulta:hover {
+    color: antiquewhite;
+}
+
+main p {
     color: black;
-    display: flex;
-    margin-top: 400px !important;
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
     background-color: rgb(255, 255, 255, 0.5);
     border: 2px;
     padding: 3px;
     border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-
-}
-main a{
-    text-decoration: none;
-    color: black;
-    background-color: #44c59a;
-    padding: 10px 10px;
-    border: 2px solid black;
-    border-radius: 15px;
-    font-family: 'Lato', sans-serif
 }
 
-main a:hover{
-    color: bisque;
+/* Media Query para ajustar el espaciado en dispositivos pequeños */
+@media only screen and (max-width: 767px) {
+    main .col-lg-6 {
+        padding: 10px; 
+    }
+
+    .btn-consulta {
+        margin-top: 10px; 
+    }
 }
 /* fin del main */
 
