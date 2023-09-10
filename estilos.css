@@ -142,7 +142,7 @@ main a:hover{
     margin: 20px;
 }
 
-.servicios-home h4{;
+.servicios-home h4{
     text-align: center;
 }
 
@@ -383,7 +383,7 @@ text-transform: uppercase;
     display: inline-block;
     width: 30px;
     height: 30px;
-    background-color: #44c59a; /* Cambiar el color del número aquí */
+    background-color: #44c59a;
     color: white;
     text-align: center;
     line-height: 30px;
@@ -410,3 +410,4 @@ text-transform: uppercase;
     text-decoration: solid;
     text-transform:capitalize;
   }
+  
