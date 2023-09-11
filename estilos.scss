@@ -2,384 +2,242 @@
 
 // Estilos globales
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background-image: url(Imagenes/background\ image.jpg);
-  background-size: auto;
+    background-image: url(Imagenes/background\ image.jpg);
+    background-size: auto;
 }
 
 // Estilos del navbar
 .navbar {
-  height: 120px;
-  background-image: linear-gradient(
-    100deg,
-    #afe7a7 0,
-    #9fe5a9 12.5%,
-    #8adea7 25%,
-    #6ed3a2 37.5%,
-    #44c59a 50%,
-    #00b693 62.5%,
-    #00ab92 75%,
-    #00a495 87.5%,
-    #00a09c 100%
-  );
+    height: 120px;
+    background-image: linear-gradient(100deg,
+            #afe7a7 0,
+            #9fe5a9 12.5%,
+            #8adea7 25%,
+            #6ed3a2 37.5%,
+            #44c59a 50%,
+            #00b693 62.5%,
+            #00ab92 75%,
+            #00a495 87.5%,
+            #00a09c 100%);
 }
 
 .img-navbar {
-  height: 80px;
+    height: 80px;
 }
 
 .titulo-head {
-  color: black;
-  font-size: x-large;
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: x-large;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-link {
-  color: black !important;
-  transition: color 0.3s ease !important;
-  font-family: 'Lato', sans-serif;
+    color: black !important;
+    transition: color 0.3s ease !important;
+    font-family: 'Lato', sans-serif;
 }
 
 .nav-link:hover {
-  color: bisque !important;
+    color: bisque !important;
 }
 
 // Estilos para la vista móvil
 @media (max-width: 575px) {
-  .navbar-collapse {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    right: 0;
-    background-color: #44c59a;
-    z-index: 1000;
-    display: none;
-  }
+    .navbar-collapse {
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        background-color: #44c59a;
+        z-index: 1000;
+        display: none;
+    }
 
-  .navbar-toggler {
-    display: block;
-    background-color: #44c59a;
-  }
+    .navbar-toggler {
+        display: block;
+        background-color: #44c59a;
+    }
 
-  .navbar-toggler-icon {
-    color: #44c59a;
-  }
+    .navbar-toggler-icon {
+        color: #44c59a;
+    }
 
-  .navbar-nav {
-    flex-direction: column;
-    align-items: stretch;
-  }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
-  .navbar-nav .nav-item {
-    margin: 0;
-  }
+    .navbar-nav .nav-item {
+        margin: 0;
+    }
 
-  .navbar-nav .nav-link {
-    padding: 10px 15px;
-    text-align: center;
-  }
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+        text-align: center;
+    }
 
-  .navbar-collapse.show {
-    display: block;
-  }
+    .navbar-collapse.show {
+        display: block;
+    }
 }
 
 // Estilos del main
 main {
-  background-image: url(Imagenes/portada.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 0;
+    background-image: url(Imagenes/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
 }
 
 main img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 main .col-lg-6 {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn-consulta {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #44c59a;
-  color: black;
-  text-decoration: none;
-  border-radius: 15px;
-  font-family: 'Lato', sans-serif;
-  margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #44c59a;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
 }
 
 .btn-consulta:hover {
-  color: antiquewhite;
+    color: antiquewhite;
 }
 
 main p {
-  color: black;
-  font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 2px;
-  padding: 3px;
-  border-radius: 5px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 // Media Query para ajustar el espaciado en dispositivos pequeños
 @media only screen and (max-width: 767px) {
-  main .col-lg-6 {
-    padding: 10px;
-  }
+    main .col-lg-6 {
+        padding: 10px;
+    }
 
-  .btn-consulta {
-    margin-top: 10px;
-  }
+    .btn-consulta {
+        margin-top: 10px;
+    }
 }
 
 // Estilos de la presentación home
 .presentacion-home {
-  margin: 20px;
+    margin: 20px;
 }
 
 .img-presentacion-home {
-  height: 600px;
-  justify-content: right;
+    height: 600px;
+    justify-content: right;
 }
 
 .p-presentacion-home h2 {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #44c59a;
-  font-size: x-large;
-  font-family: 'Lato', sans-serif;
-  margin-right: 60%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #44c59a;
+    font-size: x-large;
+    font-family: 'Lato', sans-serif;
+    margin-right: 60%;
 }
 
 .p-presentacion-home h3 {
-  background-color: rgba(255, 255, 255, 0.5);
-  font-size: medium;
-  font-family: 'Lato', sans-serif;
-  margin-right: 60%;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: medium;
+    font-family: 'Lato', sans-serif;
+    margin-right: 60%;
 }
 
 // Estilos de los servicios home
 .servicios-home {
-  margin-top: 150px;
-  padding: 20px;
+    margin-top: 150px;
+    padding: 20px;
 }
 
 .imagen-container {
-  max-width: 100%;
-  overflow: hidden;
-  text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
 }
 
 .imagen-container img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .servicios-home h2 {
-  text-decoration: underline;
-  font-family: 'Roboto', sans-serif;
-  margin: 20px;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
 }
 
 .servicios-home h4 {
-  text-align: center;
+    text-align: center;
 }
 
 .servicios-home .imagen-container img:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s;
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
 
 .servicios-home a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .servicios-home a:hover {
-  color: #44c59a;
+    color: #44c59a;
 }
 
 // Estilos de las patologías home
 .patologias-home {
-  margin-top: 150px;
+    margin-top: 150px;
 }
 
 .patologias-home h2 {
-  text-decoration: underline;
-  margin: 30px;
+    text-decoration: underline;
+    margin: 30px;
 }
 
 .imagen-redonda {
-  border-radius: 50%;
-  max-width: 50%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+    border-radius: 50%;
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .contenido {
-  text-align: center;
-  margin-bottom: 30px;
-  font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .boton-patologias a {
-  text-decoration: none;
-  color: black;
-  background-color: #44c59a;
-  padding: 10px 10px;
-  border: 2px solid black;
-  border-radius: 15px;
-  font-family: 'Lato', sans-serif;
-}
-
-.boton-patologias a:hover {
-  color: antiquewhite;
-}
-
-.patologias-home .contenido img:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s;
-}
-
-// Estilos del footer
-footer {
-  background-image: linear-gradient(
-    100deg,
-    #afe7a7 0,
-    #9fe5a9 12.5%,
-    #8adea7 25%,
-    #6ed3a2 37.5%,
-    #44c59a 50%,
-    #00b693 62.5%,
-    #00ab92 75%,
-    #00a495 87.5%,
-    #00a09c 100%
-  );
-  height: auto;
-  margin-bottom: 0;
-}
-
-footer h2 {
-  font-family: 'Dancing Script', cursive;
-  font-size: xx-large;
-}
-
-footer p {
-  font-size: small;
-}
-
-// Estilos del botón de WhatsApp
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  padding: 10px;
-  border-radius: 50px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-}
-
-.whatsapp-button i {
-  width: 24px;
-  height: 24px;
-}
-
-.whatsapp-button a {
-  color: white;
-  text-decoration: none;
-}
-
-// Estilos de la página de servicios
-.container {
-  padding: 20px;
-}
-
-.content {
-  margin: 20px 0;
-}
-
-.info-servicios h2 {
-  background-color: #44c59a;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-}
-
-.info-servicios p {
-  font-size: large;
-  background-color: antiquewhite;
-  text-align: justify;
-}
-
-.info-servicios img:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s;
-}
-
-// Estilos de la página de patologías
-.patologias {
-  height: auto;
-}
-
-.patologias h2 {
-  background-color: #44c59a;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif !important;
-}
-
-.patologias p {
-  font-size: large;
-  background-color: antiquewhite;
-  text-align: justify;
-  font-family: 'Roboto', sans-serif;
-}
-
-.patologias img {
-  max-width: 50%;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.patologias img:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s;
-}
-
-// Estilos del carrusel de certificaciones
-.carousel {
-  width: 40%;
-  margin-top: 100px;
-}
-
-.carousel img {
-  width: auto;
-}
-
-// Estilos de la página de contacto
-.contacto {
-  button {
     text-decoration: none;
     color: black;
     background-color: #44c59a;
@@ -387,80 +245,218 @@ footer p {
     border: 2px solid black;
     border-radius: 15px;
     font-family: 'Lato', sans-serif;
-  }
+}
 
-  h3 {
-    text-transform: uppercase;
-  }
+.boton-patologias a:hover {
+    color: antiquewhite;
+}
 
-  p {
+.patologias-home .contenido img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+// Estilos del footer
+footer {
+    background-image: linear-gradient(100deg,
+            #afe7a7 0,
+            #9fe5a9 12.5%,
+            #8adea7 25%,
+            #6ed3a2 37.5%,
+            #44c59a 50%,
+            #00b693 62.5%,
+            #00ab92 75%,
+            #00a495 87.5%,
+            #00a09c 100%);
+    height: auto;
+    margin-bottom: 0;
+}
+
+footer h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+}
+
+footer p {
+    font-size: small;
+}
+
+// Estilos del botón de WhatsApp
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.whatsapp-button i {
+    width: 24px;
+    height: 24px;
+}
+
+.whatsapp-button a {
+    color: white;
+    text-decoration: none;
+}
+
+// Estilos de la página de servicios
+.container {
+    padding: 20px;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.info-servicios h2 {
+    background-color: #44c59a;
     text-transform: uppercase;
-  }
+    font-family: 'Lato', sans-serif;
+}
+
+.info-servicios p {
+    font-size: large;
+    background-color: antiquewhite;
+    text-align: justify;
+}
+
+.info-servicios img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+// Estilos de la página de patologías
+.patologias {
+    height: auto;
+}
+
+.patologias h2 {
+    background-color: #44c59a;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif !important;
+}
+
+.patologias p {
+    font-size: large;
+    background-color: antiquewhite;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.patologias img {
+    max-width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.patologias img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+// Estilos del carrusel de certificaciones
+.carousel {
+    width: 40%;
+    margin-top: 100px;
+}
+
+.carousel img {
+    width: auto;
+}
+
+// Estilos de la página de contacto
+.contacto {
+    button {
+        text-decoration: none;
+        color: black;
+        background-color: #44c59a;
+        padding: 10px 10px;
+        border: 2px solid black;
+        border-radius: 15px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    p {
+        text-transform: uppercase;
+    }
 }
 
 // Estilos de la sección de preguntas frecuentes
 .preguntas-frecuentes-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .accordion-button {
-  background-color: #44c59a;
-  font-weight: bold;
+    background-color: #44c59a;
+    font-weight: bold;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #44c59a;
-  color: antiquewhite;
+    background-color: #44c59a;
+    color: antiquewhite;
 }
 
 .preguntas-frecuentes-container p {
-  background-color: antiquewhite;
+    background-color: antiquewhite;
 }
 
 .accordion-body {
-  background-color: antiquewhite;
-  color: black;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 // Estilos de la sección "Sobre mí"
 .custom-list {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 .custom-number {
-  margin-top: 50px;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: #44c59a;
-  color: white;
-  text-align: center;
-  line-height: 30px;
-  margin-right: 10px;
-  font-size: 1.2em;
+    margin-top: 50px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #44c59a;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    font-size: 1.2em;
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
-  margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
 }
 
 .sobre-mi h1 {
-  color: black;
-  font-family: 'Lato', sans-serif;
+    color: black;
+    font-family: 'Lato', sans-serif;
 }
 
 .sobre-mi li {
-  font-size: large;
-  font-family: 'Lato', sans-serif;
-  text-decoration: solid;
-  text-transform: capitalize;
+    font-size: large;
+    font-family: 'Lato', sans-serif;
+    text-decoration: solid;
+    text-transform: capitalize;
 }
