@@ -1,4 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@400;700&family=Poppins&family=Roboto:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@400;700&family=Poppins&family=Roboto:wght@400;500&display=swap');
+
+// Variables
+$color-primario: #44c59a;
+$color-secundario: #afe7a7;
+$color-texto: black;
+$color-background: antiquewhite;
+// Fin de Variables
+
+
+// Estilos globales
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +19,21 @@ body {
   background-size: auto;
 }
 
+// Estilos del navbar
 .navbar {
   height: 120px;
-  background-image: linear-gradient(100deg, #afe7a7 0, #9fe5a9 12.5%, #8adea7 25%, #6ed3a2 37.5%, #44c59a 50%, #00b693 62.5%, #00ab92 75%, #00a495 87.5%, #00a09c 100%);
+  background-image: linear-gradient(
+    100deg,
+    #afe7a7 0,
+    #9fe5a9 12.5%,
+    #8adea7 25%,
+    #6ed3a2 37.5%,
+    #44c59a 50%,
+    #00b693 62.5%,
+    #00ab92 75%,
+    #00a495 87.5%,
+    #00a09c 100%
+  );
 }
 
 .img-navbar {
@@ -22,19 +44,20 @@ body {
   color: black;
   font-size: x-large;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav-link {
   color: black !important;
   transition: color 0.3s ease !important;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .nav-link:hover {
   color: bisque !important;
 }
 
+// Estilos para la vista móvil
 @media (max-width: 575px) {
   .navbar-collapse {
     position: absolute;
@@ -45,28 +68,36 @@ body {
     z-index: 1000;
     display: none;
   }
+
   .navbar-toggler {
     display: block;
     background-color: #44c59a;
   }
+
   .navbar-toggler-icon {
     color: #44c59a;
   }
+
   .navbar-nav {
     flex-direction: column;
     align-items: stretch;
   }
+
   .navbar-nav .nav-item {
     margin: 0;
   }
+
   .navbar-nav .nav-link {
     padding: 10px 15px;
     text-align: center;
   }
+
   .navbar-collapse.show {
     display: block;
   }
 }
+
+// Estilos del main
 main {
   background-image: url(Imagenes/portada.jpg);
   background-size: cover;
@@ -87,7 +118,7 @@ main .col-lg-6 {
   border-radius: 5px;
   text-align: center;
   margin-top: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn-consulta {
@@ -97,7 +128,7 @@ main .col-lg-6 {
   color: black;
   text-decoration: none;
   border-radius: 15px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-top: 20px;
 }
 
@@ -108,21 +139,25 @@ main .col-lg-6 {
 main p {
   color: black;
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: rgba(255, 255, 255, 0.5);
   border: 2px;
   padding: 3px;
   border-radius: 5px;
 }
 
+// Media Query para ajustar el espaciado en dispositivos pequeños
 @media only screen and (max-width: 767px) {
   main .col-lg-6 {
     padding: 10px;
   }
+
   .btn-consulta {
     margin-top: 10px;
   }
 }
+
+// Estilos de la presentación home
 .presentacion-home {
   margin: 20px;
 }
@@ -136,17 +171,18 @@ main p {
   background-color: rgba(255, 255, 255, 0.5);
   color: #44c59a;
   font-size: x-large;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-right: 60%;
 }
 
 .p-presentacion-home h3 {
   background-color: rgba(255, 255, 255, 0.5);
   font-size: medium;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-right: 60%;
 }
 
+// Estilos de los servicios home
 .servicios-home {
   margin-top: 150px;
   padding: 20px;
@@ -165,7 +201,7 @@ main p {
 
 .servicios-home h2 {
   text-decoration: underline;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 20px;
 }
 
@@ -187,6 +223,7 @@ main p {
   color: #44c59a;
 }
 
+// Estilos de las patologías home
 .patologias-home {
   margin-top: 150px;
 }
@@ -207,7 +244,7 @@ main p {
 .contenido {
   text-align: center;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .boton-patologias a {
@@ -217,7 +254,7 @@ main p {
   padding: 10px 10px;
   border: 2px solid black;
   border-radius: 15px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .boton-patologias a:hover {
@@ -229,14 +266,26 @@ main p {
   transition: transform 0.3s;
 }
 
+// Estilos del footer
 footer {
-  background-image: linear-gradient(100deg, #afe7a7 0, #9fe5a9 12.5%, #8adea7 25%, #6ed3a2 37.5%, #44c59a 50%, #00b693 62.5%, #00ab92 75%, #00a495 87.5%, #00a09c 100%);
+  background-image: linear-gradient(
+    100deg,
+    #afe7a7 0,
+    #9fe5a9 12.5%,
+    #8adea7 25%,
+    #6ed3a2 37.5%,
+    #44c59a 50%,
+    #00b693 62.5%,
+    #00ab92 75%,
+    #00a495 87.5%,
+    #00a09c 100%
+  );
   height: auto;
   margin-bottom: 0;
 }
 
 footer h2 {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: xx-large;
 }
 
@@ -244,6 +293,7 @@ footer p {
   font-size: small;
 }
 
+// Estilos del botón de WhatsApp
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -253,7 +303,7 @@ footer p {
   padding: 10px;
   border-radius: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -270,6 +320,7 @@ footer p {
   text-decoration: none;
 }
 
+// Estilos de la página de servicios
 .container {
   padding: 20px;
 }
@@ -281,7 +332,7 @@ footer p {
 .info-servicios h2 {
   background-color: #44c59a;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .info-servicios p {
@@ -295,6 +346,7 @@ footer p {
   transition: transform 0.3s;
 }
 
+// Estilos de la página de patologías
 .patologias {
   height: auto;
 }
@@ -302,14 +354,14 @@ footer p {
 .patologias h2 {
   background-color: #44c59a;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif !important;
+  font-family: 'Lato', sans-serif !important;
 }
 
 .patologias p {
   font-size: large;
   background-color: antiquewhite;
   text-align: justify;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .patologias img {
@@ -323,6 +375,7 @@ footer p {
   transition: transform 0.3s;
 }
 
+// Estilos del carrusel de certificaciones
 .carousel {
   width: 40%;
   margin-top: 100px;
@@ -332,22 +385,28 @@ footer p {
   width: auto;
 }
 
-.contacto button {
-  text-decoration: none;
-  color: black;
-  background-color: #44c59a;
-  padding: 10px 10px;
-  border: 2px solid black;
-  border-radius: 15px;
-  font-family: "Lato", sans-serif;
-}
-.contacto h3 {
-  text-transform: uppercase;
-}
-.contacto p {
-  text-transform: uppercase;
+// Estilos de la página de contacto
+.contacto {
+  button {
+    text-decoration: none;
+    color: black;
+    background-color: #44c59a;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  p {
+    text-transform: uppercase;
+  }
 }
 
+// Estilos de la sección de preguntas frecuentes
 .preguntas-frecuentes-container {
   max-width: 800px;
   margin: 0 auto;
@@ -374,9 +433,10 @@ footer p {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
+// Estilos de la sección "Sobre mí"
 .custom-list {
   list-style: none;
   padding-left: 0;
@@ -403,13 +463,12 @@ footer p {
 
 .sobre-mi h1 {
   color: black;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .sobre-mi li {
   font-size: large;
-  font-family: "Lato", sans-serif;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  font-family: 'Lato', sans-serif;
+  text-decoration: solid;
   text-transform: capitalize;
-}/*# sourceMappingURL=estilos.css.map */
+}
