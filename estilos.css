@@ -409,7 +409,8 @@ footer p {
 .sobre-mi li {
   font-size: large;
   font-family: "Lato", sans-serif;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: solid;
   text-transform: capitalize;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
