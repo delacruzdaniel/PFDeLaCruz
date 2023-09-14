@@ -22,7 +22,8 @@
 
 <body>
     <!-- inicio de navbar  -->
-    <nav class="navbar navbar-expand-sm navbar-dark">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="Imagenes/Logo principal.png" alt="logo principal"
                     class="img-navbar"></a>
@@ -51,25 +52,24 @@
             </div>
         </div>
     </nav>
+    </header>
     <!-- fin de navbar -->
 
-    <!-- Comienzo del main home -->
-        <!-- Comienzo del main home -->
-        <main>
-            <img src="./Imagenes/portada.jpg" alt="Imagen portada">
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-center">
-                    <p class="col-sm-12 col-lg-4">"Tu bienestar mental es nuestra prioridad, permítenos acompañarte en este
-                        camino hacia una vida más plena y equilibrada."</p>
-                </div>
-                <div class=" col-sm-12 col-lg-6 container-fluid d-flex justify-content-center ">
-                    <a class="btn-consulta" href="./pages/contacto.html">Programa una consulta</a>
-                </div>
+<!-- Comienzo del main home -->
+<section class="main-inicio container-fluid position-relative">
+    <div class="row">
+        <img src="./Imagenes/portada.jpg" alt="Imagen portada" class="img-fluid img-centrada">
+        <div class="overlay-container text-center text-lg-start">
+            <div class="col-lg-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <p class="mensaje-home">"Tu bienestar mental es nuestra prioridad, permítenos acompañarte en este camino hacia una vida más plena y equilibrada."</p>
+                <a class="btn-consulta" href="./pages/contacto.html">Programa una consulta</a>
             </div>
-    
-        </main>
-        <!-- Fin del main home -->
-    <!-- Fin del main home -->
+        </div>
+    </div>
+</section>
+<!-- Fin del main home -->
+
+
     <!-- comienzo de Presentacion home-->
     <section class="presentacion-home container-fluid d-flex ">
         <div class="row">
@@ -102,11 +102,12 @@
         </div>
     </section>
     <!-- fin de presentacion home-->
+
     <!-- Comienzo de servicios home -->
     <section class="container servicios-home">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>SERVICIOS</h2>
+                <a href="./pages/servicios.html"><h2>SERVICIOS</h2></a>
             </div>
         </div>
         <div class=" row">
@@ -135,7 +136,7 @@
     <section class="patologias-home container ">
         <div class="row">
             <div class="col-sm-12 col-md-12 text-center">
-                <h2>PATOLOGIAS</h2>
+                <a href="./pages/servicios.html"><h2>PATOLOGIAS</h2></a>
             </div>
         </div>
         <div class="row">
@@ -274,5 +275,4 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 </body>
-
 </html>
