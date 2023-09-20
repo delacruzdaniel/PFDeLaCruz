@@ -1,0 +1,75 @@
+// Estilos del navbar
+.navbar {
+    height: 120px;
+    background-image: linear-gradient(100deg,
+            #afe7a7 0,
+            #9fe5a9 12.5%,
+            #8adea7 25%,
+            #6ed3a2 37.5%,
+            #44c59a 50%,
+            #00b693 62.5%,
+            #00ab92 75%,
+            #00a495 87.5%,
+            #00a09c 100%);
+}
+
+.img-navbar {
+    height: 80px;
+}
+
+.titulo-head {
+    color: black;
+    font-size: x-large;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+    color: black !important;
+    transition: color 0.3s ease !important;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-link:hover {
+    color: bisque !important;
+}
+
+// Estilos para la vista móvil
+@media (max-width: 575px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        background-color: #44c59a;
+        z-index: 1000;
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+        background-color: #44c59a;
+    }
+
+    .navbar-toggler-icon {
+        color: #44c59a;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+}
