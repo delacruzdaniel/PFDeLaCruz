@@ -16,6 +16,7 @@
     height: auto;
     display: block;
     margin: 0 auto;
+
     @media (max-width: 767px) {
         width: 100%;
         max-width: none;
@@ -75,23 +76,25 @@
 
 // Estilos de la presentación home
 .presentacion-home {
-    .texto-presentacion{
-        background-color: rgb(255, 228, 196,0.4);
+    .texto-presentacion {
+        background-color: rgb(255, 228, 196, 0.4);
         color: #44c59a;
         font-family: 'Lato', sans-serif;
     }
 }
 
-    .presentacion-home {
-        h2{
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-        h3{
+.presentacion-home {
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    h3 {
         font-size: x-large;
         color: black;
-        }
+    }
 }
+
 .servicios-home {
     margin-top: 150px;
     padding: 20px;
@@ -137,14 +140,16 @@
     margin-top: 150px;
 }
 
-.patologias-home{
-    a:hover{
+.patologias-home {
+    a:hover {
         color: #44c59a;
     }
-    a{
+
+    a {
         color: black;
     }
 }
+
 .patologias-home h2 {
     text-decoration: underline;
     margin: 30px;

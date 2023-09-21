@@ -246,15 +246,7 @@
 .contacto p {
   text-transform: uppercase;
 }
-.contacto input[type=text]::-moz-placeholder {
-  opacity: 0.3;
-  color: black;
-}
 .contacto input[type=text]::placeholder {
-  opacity: 0.3;
-  color: black;
-}
-.contacto input[type=tel]::-moz-placeholder {
   opacity: 0.3;
   color: black;
 }
@@ -262,15 +254,7 @@
   opacity: 0.3;
   color: black;
 }
-.contacto input[type=email]::-moz-placeholder {
-  opacity: 0.3;
-  color: black;
-}
 .contacto input[type=email]::placeholder {
-  opacity: 0.3;
-  color: black;
-}
-.contacto input[type=email]::-moz-placeholder {
   opacity: 0.3;
   color: black;
 }
@@ -358,8 +342,7 @@
 .info-servicios img:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .patologias {
@@ -384,15 +367,13 @@
   max-width: 50%;
   border-radius: 50%;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .patologias img:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .custom-list {
@@ -428,8 +409,7 @@
 .sobre-mi li {
   font-size: large;
   font-family: "Lato", sans-serif;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: solid;
   text-transform: capitalize;
   background-color: rgba(255, 228, 196, 0.4);
 }
@@ -550,4 +530,6 @@ footer p {
 body {
   background-image: url(../Imagenes/background\ image.jpg);
   background-size: auto;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
