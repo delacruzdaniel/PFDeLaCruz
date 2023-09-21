@@ -16,6 +16,10 @@
     height: auto;
     display: block;
     margin: 0 auto;
+    @media (max-width: 767px) {
+        width: 100%;
+        max-width: none;
+    }
 }
 
 .img-centrada {
@@ -41,6 +45,7 @@
     border: 2px;
     padding: 3px;
     border-radius: 5px;
+
 }
 
 .btn-consulta {
