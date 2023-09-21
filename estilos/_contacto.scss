@@ -9,6 +9,7 @@
         border-radius: 15px;
         font-family: 'Lato', sans-serif;
     }
+
     h3 {
         text-transform: uppercase;
     }
@@ -16,33 +17,40 @@
     p {
         text-transform: uppercase;
     }
-    input[type="text"]::placeholder{
+
+    input[type="text"]::placeholder {
         opacity: 0.3;
         color: black;
     }
-    input[type="tel"]::placeholder{
+
+    input[type="tel"]::placeholder {
         opacity: 0.3;
         color: black;
     }
-    input[type="email"]::placeholder{
+
+    input[type="email"]::placeholder {
         opacity: 0.3;
         color: black;
     }
-    input[type="email"]::placeholder{
+
+    input[type="email"]::placeholder {
         opacity: 0.3;
         color: black;
     }
 }
-.contacto{
-    button:hover{
+
+.contacto {
+    button:hover {
         background-color: #44c59a;
         color: aliceblue;
         border-color: black;
     }
 }
-.contacto-formulario{
+
+.contacto-formulario {
     background-color: rgba(69, 196, 154, 0.4);
 }
+
 // Estilos para que el mapa de contacto sea responsive
 .map-container {
     max-width: 100%;
