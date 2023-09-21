@@ -1,0 +1,190 @@
+// Fuentes 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@400;700&family=Poppins&family=Roboto:wght@400;500&display=swap');
+
+/* Estilos del main inicio */
+.main-inicio {
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.main-inicio img {
+    filter: brightness(30%);
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.img-centrada {
+    margin-top: 0;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mensaje-home {
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+.btn-consulta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #44c59a;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+}
+
+.btn-consulta:hover {
+    color: antiquewhite;
+}
+
+@media only screen and (max-width: 767px) {
+    main .col-lg-6 {
+        padding: 10px;
+    }
+
+    .btn-consulta {
+        margin-top: 10px;
+    }
+}
+
+// Estilos de la presentación home
+.presentacion-home {
+    .texto-presentacion {
+        background-color: rgb(255, 228, 196, 0.4);
+        color: #44c59a;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+.presentacion-home {
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: x-large;
+        color: black;
+    }
+}
+
+.servicios-home {
+    margin-top: 150px;
+    padding: 20px;
+}
+
+.imagen-container {
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.imagen-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.servicios-home h2 {
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    
+}
+
+.servicios-home h4 {
+    text-align: center;
+}
+
+.servicios-home .imagen-container img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.servicios-home a {
+    text-decoration: none;
+    color: black;
+}
+
+.servicios-home a:hover {
+    color: #44c59a;
+}
+
+// Estilos de las patologías home
+.patologias-home {
+    margin-top: 150px;
+}
+
+.patologias-home {
+    a:hover {
+        color: #44c59a;
+    }
+
+    a {
+        color: black;
+    }
+}
+
+.patologias-home h2 {
+    text-decoration: underline;
+    margin: 30px;
+}
+
+.imagen-redonda {
+    border-radius: 50%;
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.contenido {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boton-patologias a {
+    text-decoration: none;
+    color: black;
+    background-color: #44c59a;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.boton-patologias a:hover {
+    color: antiquewhite;
+}
+
+.patologias-home .contenido img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}

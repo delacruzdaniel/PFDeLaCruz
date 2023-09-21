@@ -1,0 +1,69 @@
+// Estilos de la página de contacto
+.contacto {
+    button {
+        text-decoration: none;
+        color: black;
+        background-color: #44c59a;
+        padding: 10px 10px;
+        border: 2px solid black;
+        border-radius: 15px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    p {
+        text-transform: uppercase;
+    }
+
+    input[type="text"]::placeholder {
+        opacity: 0.3;
+        color: black;
+    }
+
+    input[type="tel"]::placeholder {
+        opacity: 0.3;
+        color: black;
+    }
+
+    input[type="email"]::placeholder {
+        opacity: 0.3;
+        color: black;
+    }
+
+    input[type="email"]::placeholder {
+        opacity: 0.3;
+        color: black;
+    }
+}
+
+.contacto {
+    button:hover {
+        background-color: #44c59a;
+        color: aliceblue;
+        border-color: black;
+    }
+}
+
+.contacto-formulario {
+    background-color: rgba(69, 196, 154, 0.4);
+}
+
+// Estilos para que el mapa de contacto sea responsive
+.map-container {
+    max-width: 100%;
+    padding-bottom: 75%;
+    position: relative;
+    margin-top: 55px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

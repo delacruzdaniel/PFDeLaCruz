@@ -1,0 +1,59 @@
+// Estilos de la página de servicios
+.container {
+    padding: 20px;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.info-servicios h2 {
+    background-color: rgb(68, 197, 154, 0.5);
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+.info-servicios p {
+    padding: 12px;
+    font-size: large;
+    background-color: rgb(250, 235, 215, 0.5);
+    text-align: justify;
+}
+
+.info-servicios img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+
+// Estilos de la página de patologías
+.patologias {
+    height: auto;
+}
+
+.patologias h2 {
+    background-color: #44c59a;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif !important;
+}
+
+.patologias p {
+    padding: 12px;
+    font-size: large;
+    background-color: rgb(250, 235, 215, 0.6);
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.patologias img {
+    max-width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.patologias img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    object-fit: cover;
+}
