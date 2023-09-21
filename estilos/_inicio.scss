@@ -7,7 +7,7 @@
     background-position: center;
     padding: 0;
     position: relative;
-    text-align: center; /* Centramos el texto horizontalmente */
+    text-align: center;
 }
 
 .main-inicio img {
@@ -58,7 +58,6 @@
     color: antiquewhite;
 }
 
-// Media Query para ajustar el espaciado en dispositivos pequeños
 @media only screen and (max-width: 767px) {
     main .col-lg-6 {
         padding: 10px;
@@ -71,31 +70,23 @@
 
 // Estilos de la presentación home
 .presentacion-home {
-    margin: 20px;
+    .texto-presentacion{
+        background-color: rgb(255, 228, 196,0.4);
+        color: #44c59a;
+        font-family: 'Lato', sans-serif;
+    }
 }
 
-.img-presentacion-home {
-    height: 600px;
-    justify-content: right;
+    .presentacion-home {
+        h2{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        h3{
+        font-size: x-large;
+        color: black;
+        }
 }
-
-.p-presentacion-home h2 {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #44c59a;
-    font-size: x-large;
-    font-family: 'Lato', sans-serif;
-    margin-right: 60%;
-}
-
-.p-presentacion-home h3 {
-    background-color: rgba(255, 255, 255, 0.5);
-    font-size: medium;
-    font-family: 'Lato', sans-serif;
-    margin-right: 60%;
-}
-
-
-// Estilos de los servicios home
 .servicios-home {
     margin-top: 150px;
     padding: 20px;
